@@ -54,6 +54,28 @@ nav ul li img{
 header{
     display: grid;
     grid-template: auto 1fr / 2fr 1fr;
+    padding: 1rem;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.head-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .profile-container{
