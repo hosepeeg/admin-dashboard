@@ -11,7 +11,7 @@
 :root {
     font-size: calc(0.625rem + 0.4vw);
 }
-
+/* grid-template-rows / grid-template-columns values */
 body{
     display: grid;
     grid-template: auto 4fr / 1fr 4fr;
@@ -47,12 +47,27 @@ nav ul li img{
 }
 
 .top-nav{
+
 }
 
 /*Header*/
 header{
     display: grid;
     grid-template: auto 1fr / 2fr 1fr;
+}
+
+.profile-container{
+    display: grid;
+    grid-template: 1fr 1fr / auto 1fr;
+    gap: 0.5rem 1rem;
+}
+
+.profile-circle.cell{
+    grid-row: 1/3;
+    align-self: center;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
 }
 
 .profile-circle {
