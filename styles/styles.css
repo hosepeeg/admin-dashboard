@@ -8,18 +8,45 @@
     background-color: orange;
 }
 
+:root {
+    font-size: calc(0.625rem + 0.4vw);
+}
+
 body{
     display: grid;
-    grid-template-columns: 1fr 5fr/ 1fr 5fr;
+    grid-template: auto 4fr / 1fr 4fr;
 }
 
 /*Navigation*/
 nav{
-
+    display: grid;
+    grid-template-rows: auto auto 2fr;
+    padding: 1rem;
 }
 
-nav ul p{
+nav ul p, nav ul img{
     cursor: pointer;
+}
+
+nav ul li img{
+    height: 2rem;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.top-nav{
 }
 
 /*Header*/
