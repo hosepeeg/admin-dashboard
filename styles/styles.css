@@ -15,6 +15,7 @@
 body{
     display: grid;
     grid-template: auto 4fr / 1fr 4fr;
+    min-height: 100vh;
 }
 
 /*Navigation*/
@@ -38,7 +39,7 @@ nav ul li img{
     align-items: center;
     gap: 0.5rem;
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 3rem;
 }
 
 .nav-item{
@@ -119,17 +120,16 @@ header{
 .content{
     padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 1rem;
 }
 
 .posts{
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     grid-template-rows: auto 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-area: 1 / 1 / -1 / -1;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-area: 1 / 1 / -1 / -2;
 }
 
 .post-icons{
@@ -150,15 +150,37 @@ header{
 
 .right-content{
     display: grid;
-    grid-area: 1 / 4 / 4 / auto;
+    grid-template-rows: 1fr 1fr;
+    grid-area: 1 / -2 / -1 / -1;
     gap: 1rem;
 }
 
 .project{
     border-left: 10px solid red;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.announcements{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 1rem;
+}
+
+.announce{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
 }
