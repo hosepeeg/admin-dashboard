@@ -22,6 +22,7 @@ nav{
     display: grid;
     grid-template-rows: auto auto 2fr;
     padding: 1rem;
+    grid-area: 1 / 1 / -1 / 1;
 }
 
 nav ul p, nav ul img{
@@ -107,5 +108,20 @@ header{
 
 /*Content*/
 .content{
+    padding: 1rem;
+}
 
+.posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+}
+
+.your-posts{
+    padding-bottom: 15px;
+}
+
+.right-content{
+    display: grid;
 }
