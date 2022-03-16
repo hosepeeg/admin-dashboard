@@ -48,7 +48,16 @@ nav ul li img{
 }
 
 .top-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+.bottom-nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+    gap: 15px;
 }
 
 /*Header*/
@@ -123,6 +132,18 @@ header{
     grid-area: 1 / 1 / -1 / -1;
 }
 
+.post-icons{
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+    padding-top: 0.25rem;
+}
+
+.post-img{
+    width: 2rem;
+    height: 2rem;
+}
+
 .your-posts{
     grid-column: 1 /-1;
 }
@@ -137,8 +158,7 @@ header{
     border-left: 10px solid red;
     display: flex;
     flex-direction: column;
-    background-color: gray;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
