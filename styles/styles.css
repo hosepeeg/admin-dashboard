@@ -80,7 +80,6 @@ header{
 
 header img{
     width: 1.9rem;
-    margin-right: 1rem;
 }
 
 .search{
@@ -175,9 +174,10 @@ button{
     justify-content: end;
     gap: 0.5rem;
     padding-top: 0.25rem;
+    margin-top: auto;
 }
 
-.post-icons img:hover{
+.post-icons img:hover, .search img:hover, .notification img:hover{
     transition: 0.5s;
     transform: scale(1.25);
     cursor: pointer;
@@ -231,6 +231,12 @@ button{
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
+.announcements h3{
+    text-align: center;
+    width: max-content;
+    border-bottom: 2px black solid;
+}
+
 .title{
     background-color: #cbd5e1;
 }
@@ -247,6 +253,11 @@ button{
     border-radius: 20px;
     background-color: white;
     border: 1px solid black;
+}
+
+.trending h3{
+    border-bottom: 2px black solid;
+    width: max-content;
 }
 
 .trending h3{
