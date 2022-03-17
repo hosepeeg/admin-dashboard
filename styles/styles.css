@@ -207,11 +207,11 @@ button:active{
 }
 
 .right-title{
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .project{
-    border: 1px solid black;
     border-left: 10px solid #ef4444;;
     display: flex;
     justify-content: center;
@@ -221,7 +221,7 @@ button:active{
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: white;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
 }
 
 .project:hover{
@@ -231,14 +231,13 @@ button:active{
 
 .announcements{
     display: flex;
-    border: 1px solid black;
     flex-direction: column;
     border-radius: 20px;
     gap: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: white;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
 }
 
 .title{
@@ -252,11 +251,18 @@ button:active{
     gap: 0.5rem;
 }
 
+.announce.middle{
+    border-bottom: 2px #cbd5e1 solid;
+    border-top: 2px #cbd5e1 solid;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
 .trending{
     padding-top: 2rem;
     border-radius: 20px;
     background-color: white;
-    border: 1px solid black;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
 }
 
 
@@ -274,6 +280,10 @@ button:active{
 
 .profile-desc{
     min-width: 6rem;
+}
+
+.profile-desc :first-child{
+    font-weight: bold;
 }
 
 .profile-circle.mark{
