@@ -241,12 +241,6 @@ button:active{
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
-.announcements h3{
-    text-align: center;
-    width: max-content;
-    border-bottom: 2px black solid;
-}
-
 .title{
     background-color: #cbd5e1;
 }
@@ -265,14 +259,6 @@ button:active{
     border: 1px solid black;
 }
 
-.trending h3{
-    border-bottom: 2px black solid;
-    width: max-content;
-}
-
-.trending h3{
-    margin-left: 1rem;
-}
 
 .friends{
     display: flex;
