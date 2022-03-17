@@ -15,7 +15,6 @@ body{
     display: grid;
     grid-template: auto 4fr / 0.5fr 4fr;
     min-height: 100vh;
-    min-width: 100vw;
 }
 
 /*Navigation*/
@@ -202,7 +201,9 @@ button:active{
     grid-template-rows: 0.08fr 1fr 0.06fr 1fr;
     grid-area: 1 / -2 / -1 / -1;
     gap: 1rem;
-    max-width: 25rem;
+    max-width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .right-title{
