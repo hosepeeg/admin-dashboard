@@ -4,8 +4,6 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'El Messiri', sans-serif;
-    border: solid 1px black;
-    background-color: orange;
 }
 
 :root {
@@ -14,7 +12,7 @@
 /* grid-template-rows / grid-template-columns values */
 body{
     display: grid;
-    grid-template: auto 4fr / 1fr 4fr;
+    grid-template: auto 4fr / 0.5fr 4fr;
     min-height: 100vh;
 }
 
@@ -24,6 +22,7 @@ nav{
     grid-template-rows: auto auto 2fr;
     padding: 1rem;
     grid-area: 1 / 1 / -1 / 1;
+    background-color: #ef4444;
 }
 
 nav ul p, nav ul img{
@@ -52,6 +51,7 @@ nav ul li img{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-left: 10%;
 }
 
 .bottom-nav{
@@ -59,6 +59,7 @@ nav ul li img{
     flex-direction: column;
     margin-top: 25%;
     gap: 15px;
+    margin-left: 10%;
 }
 
 /*Header*/
@@ -122,13 +123,14 @@ header{
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 1rem;
+    background-color: #cbd5e1;
 }
 
 .posts{
     display: grid;
     gap: 2rem;
     grid-template-rows: auto 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     grid-area: 1 / 1 / -1 / -2;
 }
 
@@ -153,15 +155,20 @@ header{
     grid-template-rows: 1fr 1fr;
     grid-area: 1 / -2 / -1 / -1;
     gap: 1rem;
+    max-width: 25rem;
+    margin-left: auto;
 }
 
 .project{
-    border-left: 10px solid red;
+    border-left: 10px solid #ef4444;;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-height: 20rem;
+    max-width: 30rem;
     padding: 1rem;
     border-radius: 0.5rem;
+    background-color: white;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
@@ -170,6 +177,14 @@ header{
     flex-direction: column;
     border-radius: 20px;
     gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.title{
+    background-color: #cbd5e1;
 }
 
 .announce{
@@ -180,7 +195,41 @@ header{
 }
 
 .trending{
+    padding-top: 2rem;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.trending h3{
+    margin-left: 15%;
+}
+
+.friends{
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.friend-container{
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-desc{
+    min-width: 8rem;
+}
+
+.profile-circle.mark{
+    background-color: purple;
+}
+
+.profile-circle.emanual{
+    background-color: orange;
+}
+
+.profile-circle.kevin{
+    background-color: green;
 }
