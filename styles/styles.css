@@ -156,7 +156,6 @@ header{
     grid-area: 1 / -2 / -1 / -1;
     gap: 1rem;
     max-width: 25rem;
-    margin-left: auto;
 }
 
 .project{
@@ -165,7 +164,7 @@ header{
     justify-content: center;
     flex-direction: column;
     max-height: 20rem;
-    max-width: 30rem;
+    max-width: 35rem;
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: white;
@@ -201,7 +200,7 @@ header{
 }
 
 .trending h3{
-    margin-left: 15%;
+    margin-left: 1rem;
 }
 
 .friends{
@@ -214,12 +213,11 @@ header{
 .friend-container{
     display: flex;
     padding-top: 1rem;
-    justify-content: center;
-    align-items: center;
+    gap: 1rem;
 }
 
 .profile-desc{
-    min-width: 8rem;
+    min-width: 6rem;
 }
 
 .profile-circle.mark{
